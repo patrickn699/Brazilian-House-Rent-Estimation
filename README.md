@@ -12,3 +12,5 @@ This project is divided into 4 sections:
 In every section the cahanges made is saved into a new and updated csv file.
 
 Preview:
+
+
