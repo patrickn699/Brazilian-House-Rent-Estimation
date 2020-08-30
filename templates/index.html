@@ -1,0 +1,152 @@
+
+<head>
+    <!--<link rel="stylesheet" href="main1.css">-->
+    <link href="{{ url_for('static', filename='main1.css') }}" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<div class="user">
+    <header class="user__header">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt="" />
+        <h1 class="user__title">Brazilian House Rent Estimation</h1>
+    </header>
+    
+    <form class="form" name="myform" action="{{url_for('predict')}}" method="POST">
+        <div class="form__group">
+            <input type="number" placeholder="Area" required class="form__input" name="area" />
+        </div>
+        
+        <div class="form__group">
+            <input type="number" placeholder=" Number of Rooms (maximum is 13)" required class="form__input" name="room"/>
+        </div>
+
+        <div class = "form__group">
+            <input type="number" placeholder="Number of Bathrooms (maximum is 10)" required class="form__input" name="bath"/>
+        </div>
+
+        <div class = "form__group">
+            <input type="number" placeholder="Parking Spaces (1 = YES, 0 = NO)" required class="form__input" name="park"/>
+        </div>
+
+        <div class = "form__group">
+            <input type="number" placeholder="Hoa-(Home owners association tax in $)" required class="form__input" name="hoa"/>
+        </div>
+
+        <div class = "form__group">
+            <input type="number" placeholder="Rent amount in $" required class="form__input" name="rent"/>
+        </div>
+
+        <div class = "form__group">
+            <input type="number" placeholder="Property tax in $" required class="form__input" name="tax"/>
+        </div>
+
+        <div class = "form__group">
+            <input type="number" placeholder="Fire insurance in $" required class="form__input" name="fire"/>
+        </div>
+
+        <div class = "form__group">
+            <input type="number" placeholder="Pets (1 = YES, 0 = No)" required class="form__input" name="pet"/>
+        </div>
+
+        <div class = "form__group">
+            <input type="number" placeholder="Furnished house (1 = YES, 0 = No)" required class="form__input" name="fur"/>
+        </div>
+
+        <div class = " form__group">
+            <select id="cars" class="form__input" required name="sel">
+                
+               
+                <option value="Campinas">Campinas</option>
+                <option value="Porto Alegre">Porto Alegre</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Belo Horizonte">Belo Horizonte</option>
+                <option value="São Paulo">Sao Paulo</option>
+           
+              </select>
+        </div>
+
+        <script>
+            function myfunction()
+            {
+                var x = document.getElementsByName('area');
+                if(x == "[object NodeList]")
+                {
+                    alert(blank);
+                    return false;
+                }
+
+                else{
+                    alert("ok");
+                    document.getElementById("demo").innerHTML = "hi";
+                }
+                
+                
+            }
+        </script>
+
+        
+        <script>
+            /*function validate()
+            {
+                var y = document.getElementsByName('room').values;
+                var x = document.getElementsByName('area').values;
+                var a = document.getElementsByName('bath').values;
+                var b = document.getElementsByName('park').values;
+                var c = document.getElementsByName('hoa').values;
+                var d = document.getElementsByName('rent').values;
+                var e = document.getElementsByName('tax').values;
+                var f = document.getElementsByName('fire').values;
+                var g = document.getElementsByName('pet').values;
+                var h = document.getElementsByName('fur').values;
+                var i = document.getElementsByName('sel').values;
+
+                if ( x == "[object NodeList]" || y == "[object NodeList]" || a == "[object NodeList]" || b == "[object NodeList]" || c == "[object NodeList]" || d == "[object NodeList]" || e =="[object NodeList]" || f == "[object NodeList]" || g == "[object NodeList]" || h == "[object NodeList]" || i == "[object NodeList]") 
+                {
+                    alert(x);
+                    return false;
+                }
+
+
+               else
+                {
+                  
+                   document.getElementById("demo").innerHTML = "P";  
+                 
+                }
+            
+                }*/
+        </script>
+
+        <button class="btn" type="submit" >Get rent</button>
+
+        <button class="btn" type="reset" id="bt" >Reset</button>
+        
+
+        
+        <div class="container">
+        <span class="text1" id="demo">
+           
+            </span>
+            </div>
+
+    </form>
+
+</div>
+
+
+<div class="bottom">
+    <a  href="#" class="icn">
+        <i class="fab fa-github" onclick="window.location.href='https://github.com/patrickn699/Brazilian-House-Rent-Estimation.git'"></i>
+    </a>
+
+    <a  href="#" class="icn">
+        <i class="fab fa-linkedin" onclick="window.location.href='https://www.linkedin.com/in/prathmesh-patil-b151051a3'"></i>
+    </a>
+</div>
+
+
+
+
+
+
