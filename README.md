@@ -53,9 +53,10 @@ In every section the changes made is saved into a new and updated csv file.</br>
 └── requirements.txt
 ```
 
-## Libraries used:
+## Libraries & Technologies used:
 
-![](https://www.vectorlogo.zone/logos/numpy/numpy-icon.svg)    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/180px-Pandas_mark.svg.png)
+![](https://www.vectorlogo.zone/logos/numpy/numpy-icon.svg)    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pandas_mark.svg/180px-Pandas_mark.svg.png) ![](https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg) 
+![](https://www.vectorlogo.zone/logos/python/python-official.svg)
 
 ![](https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-official.svg)  ![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/200px-Scikit_learn_logo_small.svg.png) ![](https://cdn.iconscout.com/icon/free/png-256/azure-1868965-1583129.png)
 
