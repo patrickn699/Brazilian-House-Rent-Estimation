@@ -4,7 +4,7 @@
 This is web app which estimates house rent based on various features, you can get more details from [kaggle](https://www.kaggle.com/rubenssjr/brasilian-houses-to-rent).
 <br/>
 The dataset contains 13 features with 10614 records.</br>
-It is a web app created using flask and deployed on **[Microsoft Azure Cloud](https://rent-estimation.azurewebsites.net/)**.<br/>
+It is a web app created using flask and deployed on **[Heroku](https://flask-mp4.herokuapp.com/)**.<br/>
 
 This project is divided into 4 sections:
 1) The first section is basic EDA of the data.
